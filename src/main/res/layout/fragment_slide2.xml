@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".slide2"
+    android:background="@color/color_slide2">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:contentDescription="@string/descimg"
+            android:id="@+id/slide1img"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:src="@drawable/imunisistem" />
+
+        <TextView
+            android:textColor="@color/putih"
+            android:paddingTop="15dp"
+            android:id="@+id/slide1txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/slide2_judul"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="@color/putih"
+            android:paddingTop="10dp"
+            android:id="@+id/slide1desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/slide2_desc"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+    </LinearLayout>
+</FrameLayout>

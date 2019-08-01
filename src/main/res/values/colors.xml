@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="transparant">#80000000</color>
+    <color name="jenis">#00CCFF</color>
+    <color name="jenis_tbl">#43898a</color>
+
+    <color name="putih">#FFFFFF</color>
+    <color name="color_slide1">#66C4BE</color>
+    <color name="color_slide2">#6666FF</color>
+    <color name="color_slide3">#F187F5</color>
+
+    <color name="colorNavigationIcon">#dae9f6</color>
+    <color name="colorNavigationText">#ffffff</color>
+
+
+</resources>

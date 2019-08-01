@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">BIR</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="descimg">image</string>
+
+    <string name="slide1_judul">Imunisasi</string>
+    <string name="slide1_desc">Sayangi anak bunda dengan imunisasi</string>
+
+    <string name="slide2_judul">Jenis Imunisasi</string>
+    <string name="slide2_desc">Banyak manfaat dari setiap jenis imunisasi</string>
+
+    <string name="slide3_judul">Waktu Imunisasi</string>
+    <string name="slide3_desc">Jangan sampai terlewat hari imunisasi untuk sang buah hati</string>
+
+    <string name="home">Home</string>
+    <string name="jadwal">Jenis Imunisasi</string>
+    <string name="alarm">Alarm</string>
+
+
+    <string name="text">adalah suatu upaya yang dilakukan untuk mencegah terjadinya penyakit
+                        dengan cara memberikan vaksin ke dalam tubuh sehingga merangsang sistem
+                        kekebalan tubuh terhadap jenis antigen tersebut dimasa yang akan datang</string>
+    <string name="text1">Untuk menjaga daya tahan tubuh sang buah hati</string>
+    <string name="text2">Untuk mencegah bayi terkena penyakit-penyakit menular yang berbahaya</string>
+    <string name="text3">Untuk menjaga buah hati agar selalu sehat</string>
+    <string name="text4">Sebagai upaya pencegahan dari kecacatan dan kematian</string>
+    <string name="text5">Sebagai upaya untuk menjaga dan membantu perkembangan sang buah hati secara optimal</string>
+
+    <string name="hepatitis">merupakan jenis penyakit yang menyerang pada hati sehingga apabila sang buah hati
+                            terkena penyakit ini dapat menyebabkan kerusakan pada hati bahkan dapat
+                            menyebabkan kematian.</string>
+    <string name="bcg">adalah vaksin yang diberikan untuk melindungi diri terhadap tuberkulosis (TB),
+                       yaitu penyakit infeksi yang terutama menyerang paru-paru.</string>
+    <string name="polio">merupakan vaksin yang digunakan untuk melindungi tubuh dari gangguan poliomyelitis atau infeksi polio.
+                        Vaksin polio ini sangat penting untuk mencegah penularan.</string>
+    <string name="dpt">adalah vaksin kombinasi yang diberikan untuk mencegah tiga penyakit,
+                       yakni difteri, pertusis (batuk rejan), dan tetanus.</string>
+    <string name="campak">adalah vaksin untuk mencegah penyakit campak</string>
+</resources>

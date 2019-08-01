@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".alarm"
+    android:background="@color/putih">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_slide2">
+    </android.support.v7.widget.Toolbar>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="BIR"
+                android:textColor="@color/putih"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_column="1"/>
+
+            <Button
+                android:id="@+id/btn_keluar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_akun" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        android:padding="20dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                //HEPATITIS
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:text="Hepatitis B"
+                    android:textAlignment="viewStart"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/add_hepatitis"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/custom_btn_add"
+                    android:text="+"
+                    android:textSize="24sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/detail_tanggal_hepatitis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+
+                <Button
+                    android:id="@+id/btn_hapus_hepatitis"
+                    android:layout_width="23dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/custom_btn_hapus"
+                    android:text="X"
+                    android:textAllCaps="true"
+                    android:textColor="@color/putih"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/detail_jam_hepatitis"
+                android:layout_column="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:textSize="14sp"/>
+
+
+            <TableRow
+                android:paddingTop="10dp">
+
+                //BCG
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:text="BCG"
+                    android:textAlignment="viewStart"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/add_bcg"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/custom_btn_add"
+                    android:text="+"
+                    android:textSize="24sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/detail_tanggal_bcg"
+                    android:layout_column="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:textSize="14sp"/>
+                <Button
+                    android:id="@+id/btn_hapus_bcg"
+                    android:layout_width="23dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/custom_btn_hapus"
+                    android:text="X"
+                    android:textAllCaps="true"
+                    android:textColor="@color/putih"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+            </TableRow>
+            <TextView
+                android:id="@+id/detail_jam_bcg"
+                android:layout_column="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:textSize="14sp"/>
+
+            <TableRow
+                android:paddingTop="10dp">
+
+                //POLIO
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:text="Polio"
+                    android:textAlignment="viewStart"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/add_polio"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/custom_btn_add"
+                    android:text="+"
+                    android:textSize="24sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/detail_tanggal_polio"
+                    android:layout_column="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:textSize="14sp"/>
+
+                <Button
+                    android:id="@+id/btn_hapus_polio"
+                    android:layout_width="23dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/custom_btn_hapus"
+                    android:text="X"
+                    android:textAllCaps="true"
+                    android:textColor="@color/putih"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/detail_jam_polio"
+                android:layout_column="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:textSize="14sp"/>
+
+            <TableRow
+                android:paddingTop="10dp">
+
+                //DPT
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:text="DPT"
+                    android:textAlignment="viewStart"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/add_dpt"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/custom_btn_add"
+                    android:text="+"
+                    android:textSize="24sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/detail_tanggal_dpt"
+                    android:layout_column="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:textSize="14sp"/>
+
+                <Button
+                    android:id="@+id/btn_hapus_dpt"
+                    android:layout_width="23dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/custom_btn_hapus"
+                    android:text="X"
+                    android:textAllCaps="true"
+                    android:textColor="@color/putih"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/detail_jam_dpt"
+                android:layout_column="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:textSize="14sp"/>
+
+
+            <TableRow
+                android:paddingTop="10dp">
+
+                //CAMPAK
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:text="Campak"
+                    android:textAlignment="viewStart"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/add_campak"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/custom_btn_add"
+                    android:text="+"
+                    android:textSize="24sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/detail_tanggal_campak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    tools:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btn_hapus_campak"
+                    android:layout_width="23dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/custom_btn_hapus"
+                    android:text="X"
+                    android:textAllCaps="true"
+                    android:textColor="@color/putih"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/detail_jam_campak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:textSize="14sp"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

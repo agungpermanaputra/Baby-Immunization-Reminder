@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_menu"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/jadwal_menu"
+        android:title="@string/jadwal"
+        android:icon="@drawable/ic_jadwal"/>
+
+    <item
+        android:id="@+id/alarm_menu"
+        android:title="@string/alarm"
+        android:icon="@drawable/ic_alarm"/>
+
+
+</menu>

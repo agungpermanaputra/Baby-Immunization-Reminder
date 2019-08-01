@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jadwal"
+    android:background="@color/putih">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_slide2">
+    </android.support.v7.widget.Toolbar>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="BIR"
+                android:textColor="@color/putih"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:layout_column="1"/>
+
+            <Button
+                android:id="@+id/btn_keluar"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_akun" />
+        </TableRow>
+
+    </TableLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/btn_hepatitis_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_jenis"
+            android:text="Hepatitis B"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <WebView
+            android:id="@+id/txt_hb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TableLayout
+            android:id="@+id/tbl_hb"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:background="@color/jenis_tbl">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Imunisasi"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="Waktu"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:background="@color/color_slide1">
+
+                <TextView
+                    android:text="Imunisasi hepatitis B"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:text="12 jam setelah lahir"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:background="@color/color_slide1">
+
+                <TextView
+                    android:text="Imunisasi hepatitis B"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:text="Usia 2 bulan"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:background="@color/color_slide1">
+
+            <TextView
+                android:text="Imunisasi hepatitis B"
+                android:textSize="14sp" />
+
+            <TextView
+                android:text="Usia 5 bulan"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"/>
+
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btn_bcg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_jenis"
+            android:text="BCG"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"/>
+
+        <WebView
+            android:id="@+id/txt_bcg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TableLayout
+            android:id="@+id/tbl_bcg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:background="@color/jenis_tbl">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Imunisasi"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="Waktu"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="3dp"
+            android:background="@color/color_slide1">
+
+            <TextView
+                android:text="Imunisasi BCG pertama"
+                android:textSize="14sp" />
+
+            <TextView
+                android:text="Usia 2 bulan"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:padding="3dp"
+            android:background="@color/color_slide1">
+
+            <TextView
+                android:text="Imunisasi BCG kedua"
+                android:textSize="14sp" />
+
+            <TextView
+                android:text="Usia 3 Bulan"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"/>
+        </TableRow>
+        </TableLayout>
+
+
+        <Button
+            android:id="@+id/btn_polio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_jenis"
+            android:text="Polio"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"/>
+
+        <WebView
+            android:id="@+id/txt_polio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TableLayout
+            android:id="@+id/tbl_polio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:background="@color/jenis_tbl"
+                android:gravity="center_horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Imunisasi"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="Waktu"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_slide1"
+                android:gravity="clip_horizontal"
+                android:padding="3dp">
+
+                <TextView
+                    android:text="Imunisasi Polio Oral"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:text="Saat lahir"
+                    android:textSize="14sp" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_slide1"
+                android:gravity="clip_horizontal"
+                android:padding="3dp">
+
+                <TextView
+                    android:text="Imunisasi Polio Oral"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:text="Usia 2,4,6 Bulan"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_slide1"
+                android:gravity="center_horizontal"
+                android:padding="3dp">
+
+                <TextView
+                    android:text="Imunisasi Polio Suntik"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:text="Usia 2,3,4 bulan"
+                    android:textSize="14sp" />
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_slide1"
+                android:gravity="center_horizontal"
+                android:padding="3dp">
+
+                <TextView
+                    android:text="Imunisasi Polio Suntik"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:text="13 tahun"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+
+
+        <Button
+            android:id="@+id/btn_dpt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_jenis"
+            android:text="DPT"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"/>
+
+        <WebView
+            android:id="@+id/txt_dpt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TableLayout
+            android:id="@+id/tbl_dpt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/jenis_tbl"
+                android:gravity="center_horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Imunisasi"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="Waktu"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_slide1"
+                android:gravity="center_horizontal"
+                android:padding="3dp">
+
+                <TextView
+                    android:text="Imunisasi DPT pertama"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:text="Usia 5 tahun"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_slide1"
+                android:gravity="center_horizontal"
+                android:padding="3dp">
+
+                <TextView
+                    android:text="Imunisasi DPT kedua"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:text="Usia 12 tahun"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+
+
+        <Button
+            android:id="@+id/btn_campak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_jenis"
+            android:text="Campak"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"/>
+
+        <WebView
+            android:id="@+id/txt_campak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TableLayout
+            android:id="@+id/tbl_campak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:background="@color/jenis_tbl"
+                android:gravity="center_horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Imunisasi"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:text="Waktu"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_slide1"
+                android:gravity="center_horizontal"
+                android:padding="3dp">
+
+                <TextView
+                    android:text="Imunisasi Campak"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:text="Usia 9 bulan"
+                    android:textSize="14sp" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</FrameLayout>
